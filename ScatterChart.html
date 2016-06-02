@@ -1,9 +1,10 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ScatterChartID69c324824c4</title>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>ScatterChartID12c051d522cf</title>
+<meta http-equiv="content-type" content="text/html;charset=euc-kr" />
 <style type="text/css">
 body {
   color: #444444;
@@ -17,15 +18,15 @@ body {
 </style>
 </head>
 <body>
- <!-- ScatterChart generated in R 3.2.3 by googleVis 0.5.10 package -->
-<!-- Thu Jun 02 17:08:46 2016 -->
+ <!-- ScatterChart generated in R 3.3.0 by googleVis 0.5.10 package -->
+<!-- Thu Jun 02 19:57:32 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataScatterChartID69c324824c4 () {
+function gvisDataScatterChartID12c051d522cf () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -693,14 +694,21 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartScatterChartID69c324824c4() {
-var data = gvisDataScatterChartID69c324824c4();
+function drawChartScatterChartID12c051d522cf() {
+var data = gvisDataScatterChartID12c051d522cf();
 var options = {};
 options["allowHtml"] = true;
+options["title"] = "소득과 기대수명의 상관관계";
+options["pointshape"] = "polygon";
+options["vAxis"] = {title: '기대수명'};
+options["hAxis"] = {title: '소득'};
+options["trendlines"] = "linear";
+options["width"] =    800;
+options["height"] =    700;
 
 
     var chart = new google.visualization.ScatterChart(
-    document.getElementById('ScatterChartID69c324824c4')
+    document.getElementById('ScatterChartID12c051d522cf')
     );
     chart.draw(data,options);
     
@@ -724,9 +732,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartScatterChartID69c324824c4);
+callbacks.push(drawChartScatterChartID12c051d522cf);
 })();
-function displayChartScatterChartID69c324824c4() {
+function displayChartScatterChartID12c051d522cf() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -750,17 +758,17 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID69c324824c4"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID12c051d522cf"></script>
  
 <!-- divChart -->
   
-<div id="ScatterChartID69c324824c4" 
-  style="width: 500; height: automatic;">
+<div id="ScatterChartID12c051d522cf" 
+  style="width: 800; height: 700;">
 </div>
- <div><span>Data: mysct &#8226; Chart ID: <a href="Chart_ScatterChartID69c324824c4.html">ScatterChartID69c324824c4</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: mysct &#8226; Chart ID: <a href="Chart_ScatterChartID12c051d522cf.html">ScatterChartID12c051d522cf</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
-  R version 3.2.3 (2015-12-10) 
+  R version 3.3.0 (2016-05-03) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/scatterchart">Documentation and Data Policy</a>
 </span></div>
 </body>
